@@ -138,7 +138,7 @@ class FRFDecoder:
 
 
 @click.command()
-@click.option("--outdir", default=".", help="Output direcotry")
+@click.option("--outdir", default=".", help="Output directory")
 @click.argument("filename")
 def cli(filename, outdir):
     FRFDecoder.decode(filename, outdir)
